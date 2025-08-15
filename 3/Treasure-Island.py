@@ -6,6 +6,7 @@ print(r'''
  _________|________________.=""_;=.______________|_____________________|_______
 |                   |  ,-"_,=""     `"=.|                  |
 |___________________|__"=._o`"-._        `"=.______________|___________________
+
           |                `"=._o`"=._      _`"=._                     |
  _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
 |                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
@@ -22,20 +23,21 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 /______/______/______/______/______/______/______/______/______/______/_____ /
 *******************************************************************************
 ''')
+# Above graphic code is download from https://ascii.co.uk/art
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
 print("You are at a cross road.'Where do you want to go?")
-way = input('Type "left" or "right"\n') #Option
+way = input('Type "left" or "right"\n').lower() #Option
 if way == 'right'and 'left':
     print("You fell into hole. Game Over!") # for right
 else:
     print("You've welcome to lake. There is an Island in the middle of lake.") #for left
-    forward= input("Type 'wait' to wait a boat. Type 'swim' to swim across.\n") # Option
+    forward= input("Type 'wait' to wait a boat. Type 'swim' to swim across.\n").lower() # Option
     if forward == 'swim'and 'wait':
         print("You get attacked by an angry throat. Game Over!") #for swim
     else:
         print("You arrive at the Island unharmed. There is a house 3 doors.") #for wait
-        doors= input("one yellow, one red, and one blue. Which color do you choose.\n") # Option
+        doors= input("one yellow, one red, and one blue. Which color do you choose.\n") .lower() # Option
         if doors== 'red' and 'yellow':
             print("It is room full of fire. Game Over!") #for red
         elif doors== 'blue' and 'yellow':
